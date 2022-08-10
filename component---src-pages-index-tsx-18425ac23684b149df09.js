@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgreyun_til=self.webpackChunkgreyun_til||[]).push([[691],{7200:function(e,n,t){t.r(n),t.d(n,{Head:function(){return l}});var r=t(7294);n.default=function(e){var n=e.data.allMarkdownRemark.edges;return r.createElement("main",null,r.createElement("h1",null,"This is my TIL blog."),n.map((function(e){var n=e.node.frontmatter;return r.createElement("div",null,n.title)})))};var l=function(){return r.createElement("title",null,"TIL")}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-18425ac23684b149df09.js.map
