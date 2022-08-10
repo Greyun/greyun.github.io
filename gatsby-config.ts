@@ -17,18 +17,20 @@ const config: GatsbyConfig = {
   }, "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      name: `markdown-pages`,
+      path: `${__dirname}/posts`,
     },
-    __key: "images"
   }, {
-    resolve: 'gatsby-source-filesystem',
+    resolve: `gatsby-transformer-remark`,
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
+      // Footnotes mode (default: true)
+      footnotes: true,
+      // GitHub Flavored Markdown mode (default: true)
+      gfm: true,
+      // Plugins configs
+      plugins: [],
     },
-    __key: "pages"
-  }]
+  },]
 };
 
 export default config;
