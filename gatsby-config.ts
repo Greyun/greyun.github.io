@@ -1,7 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  pathPrefix: `/TIL`,
   siteMetadata: {
     title: `greyun-til`,
     siteUrl: `https://www.yourdomain.tld`
